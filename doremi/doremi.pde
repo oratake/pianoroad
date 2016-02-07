@@ -47,10 +47,13 @@ void draw(){
   text ("Device Name: " + output.getName (), 15, 20);
   text ("Program Change: " + program, 15, 40);
   text ("Click and release MLB! ", 15, 80);
-  if(do4>lengH&&C4==0){C4=1;output.sendNoteOn(ch,60,vel);}
-  if(do4<lengL&&C4==1){C4=0;output.sendNoteOff(ch,60,vel);}
-  if(re4>lengH&&E4==0){E4=1;output.sendNoteOn(ch,64,vel);}
-  if(re4<lengL&&E4==1){E4=0;output.sendNoteOff(ch,64,vel);}
+  //if(do4>lengH&&C4==0){C4=1;output.sendNoteOn(ch,60,vel);}
+  //if(do4<lengL&&C4==1){C4=0;output.sendNoteOff(ch,60,vel);}
+  if(mi4>lengH&&E4==0){E4=1;output.sendNoteOn(ch,64,vel);}
+  if(mi4<lengL&&E4==1){E4=0;output.sendNoteOff(ch,64,vel);}
+
+//if(mi4>lengH&&E4==0){E4=1;output.sendNoteOn(ch,64,vel);}
+  //if(mi4<lengL&&E4==1){E4=0;output.sendNoteOff(ch,64,vel);}
 }
 
 void serialEvent(Serial myPort) {
