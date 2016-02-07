@@ -39,7 +39,7 @@ void loop() {
 void establishContact() {
   // Processingから何か文字が送られてくるのを待つ
   while (Serial.available() <= 0) {
-      Serial.println("0,0");
-      delay(300);
+      Serial.println("0,0,0,0,0,0,0,0");
+      delay(50);
     }
   }

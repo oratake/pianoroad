@@ -29,7 +29,7 @@ void setup(){
   size(256,256);
 
   // ポート名(Arduinoで選択したもの)とスピードを指定してシリアルポートを開く
-  myPort = new Serial(this, "/dev/cu.usbmodem1451", 9600);
+  myPort = new Serial(this, "/dev/cu.usbmodem1411", 9600);
   // 改行コードが受信されるまで受信し続ける
   myPort.bufferUntil('\n');
 
@@ -70,6 +70,7 @@ void serialEvent(Serial myPort) {
      la4 = sensors[5];
      si4 = sensors[6];
      do5 = sensors[7];
+     println(do4+", "+re4+", "+mi4+", "+fa4+", "+so4+", "+la4+", "+si4+", "+do5);
  }
  // 読み込み完了後、次の情報を要求
  myPort.write("65");
