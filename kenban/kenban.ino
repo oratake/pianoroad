@@ -1,7 +1,7 @@
 /*
  * Arduino側プログラム
  * arduino - processing通信部分参考:http://yoppa.org/tau_bmaw13/4772.html
- * ver2.0シリアル通信テスト
+ * ver2.1 シリアルテスト+gitへの反映テスト
  */
 
 int sensors[8] = {}; // センサの値を格納する配列の宣言と初期化
