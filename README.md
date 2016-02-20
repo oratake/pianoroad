@@ -6,5 +6,5 @@
 └doremi - ProcessingのData(.pde)
 
 ## 注意
-Processingの使用時に、minimライブラリをインポートのこと。
+Processingの使用時に、minimライブラリをインポートのこと。  
 動作確認: Processing3.0.1
